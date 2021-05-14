@@ -1,0 +1,103 @@
+.container {
+  display: flex;
+  max-width: 1000px;
+  margin:auto;
+}
+
+.item {
+/*  height: 100px;*/
+  width: 660px; /* A fixed width as the default */
+}
+
+.item-center { 
+  flex-grow: 1; /* Set the middle element to grow and stretch */
+}
+
+
+.item + .item { 
+  margin-left: 2%; 
+}
+
+body {
+font-family: 'Playfair Display', serif;
+    background-color: #EDf5E1;
+    line-height: 1.5em;
+}
+
+h1.main {
+    font-size: 3em;
+    line-height: 0em;
+    text-align:center;
+/*
+    line-height: 1em;
+  padding-left: 1em;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+background-image:url(blackgoose.svg);
+*/
+}
+
+.playful {
+  color: #000;
+  text-shadow: 1px 1px #D79922, 2px 2px #D79922;
+}
+
+.mainimg {
+    max-width: 15%;
+}
+
+h2, p {
+    color: #000;
+}
+
+/* Glyph, by Harry Roberts */
+
+hr.style-eight {
+    overflow: visible; /* For IE */
+    max-width: 30%;
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
+hr.style-eight:after {
+    content: "§";
+    display: inline-block;
+    position: relative;
+    top: -0.8em;
+    font-size: 1em;
+    padding: 0 0.5em;
+    background: #EDf5E1;
+}
+
+.hr-text {
+  line-height: 1em;
+  position: relative;
+  outline: 0;
+  border: 0;
+  color: black;
+  text-align: center;
+  font-size:1.5em;
+  height: 1.5em;
+  opacity: 1;
+}
+.hr-text:before {
+  content: "";
+  background: linear-gradient(to right, transparent, #818078, transparent);
+  position: absolute;
+  left: 0%;
+  top: 50%;
+  width: 100%;
+  height: 1px;
+}
+.hr-text:after {
+  content: attr(data-content);
+  position: relative;
+  display: inline-block;
+  color: black;
+  padding: 0 0.5em;
+  line-height: 1.5em;
+  color: #000;
+  background-color: #EDf5E1;
+}
