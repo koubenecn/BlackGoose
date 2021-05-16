@@ -2,6 +2,7 @@
 
 .container {
   display: grid;
+  height: 100vh;
   grid-template-columns: 33.33% 33.33% 33.33%;
   grid-template-rows: 50% 50%;
 /*  align-items: center;*/
@@ -50,7 +51,7 @@
 body {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    
 font-family: 'Playfair Display', serif;
     background-color: #EDf5E1;
     line-height: 1.5em;
