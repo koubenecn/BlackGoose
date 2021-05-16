@@ -2,13 +2,13 @@
 
 .container {
   display: grid;
-  height: 100vh;
+  height: calc(100vh - 4em);
   grid-template-columns: 33.33% 33.33% 33.33%;
   grid-template-rows: 50% 50%;
 /*  align-items: center;*/
 /*  align-content: stretch;  */
   background: white;
-  margin: 1em;
+  margin: 2em;
   padding: 0em;
 }
 
