@@ -1,3 +1,5 @@
+
+
 .container {
   display: grid;
   grid-template-columns: 33.33% 33.33% 33.33%;
@@ -5,8 +7,8 @@
 /*  align-items: center;*/
 /*  align-content: stretch;  */
   background: white;
-  margin: 1.5em;
-  padding: 1.5em;
+  margin: 1em;
+  padding: 0em;
 }
 
 .item-a {
@@ -14,6 +16,7 @@
   grid-column-end: 1;
   grid-row-start: 1;
   grid-row-end: 2;
+  padding:2em;
 }
 
 .item-b {
@@ -21,6 +24,8 @@
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 1;
+  align-self: center;
+  padding: 2em;
 }
 
 .item-c {
@@ -28,6 +33,8 @@
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 2;
+  align-self: center;
+  padding: 2em;
 }
 
 .item-d {
@@ -35,6 +42,8 @@
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 1;
+  align-self: center;
+  padding: 2em;
 }
 
 
@@ -69,60 +78,17 @@ background-image:url(blackgoose.svg);
     max-width: 60%;
 }
 
-h2, p {
+h2 {
     color: #000;
-}
-
-/* Glyph, by Harry Roberts */
-
-hr.style-eight {
-    overflow: visible; /* For IE */
-    max-width: 30%;
-    padding: 0;
-    border: none;
-    border-top: medium double #333;
-    color: #333;
+    font-size: 1.25em;
+    font-weight: 200;
+    font-style: italic;
     text-align: center;
 }
-hr.style-eight:after {
-    content: "§";
-    display: inline-block;
-    position: relative;
-    top: -0.8em;
-    font-size: 1em;
-    padding: 0 0.5em;
-    background: #EDf5E1;
-}
 
-.hr-text {
-  line-height: 1em;
-  position: relative;
-  outline: 0;
-  border: 0;
-  color: black;
-  text-align: center;
-  font-size:1.5em;
-  height: 1.5em;
-  opacity: 1;
-}
-.hr-text:before {
-  content: "";
-  background: linear-gradient(to right, transparent, #818078, transparent);
-  position: absolute;
-  left: 0%;
-  top: 50%;
-  width: 100%;
-  height: 1px;
-}
-.hr-text:after {
-  content: attr(data-content);
-  position: relative;
-  display: inline-block;
-  color: black;
-  padding: 0 0.5em;
-  line-height: 1.5em;
-  color: #000;
-  background-color: #EDf5E1;
+p {
+    color: #000;
+    margin: 2em;
 }
 
 .stripe-1 {
