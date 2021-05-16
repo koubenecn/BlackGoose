@@ -76,7 +76,9 @@ background-image:url(blackgoose.svg);
 }
 
 .mainimg {
-    max-width: 60%;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
 }
 
 h2 {
